@@ -31,7 +31,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\" && CI=true npm run test"
+      "pre-commit": "npm run test"
     }
   },
   "eslintConfig": {

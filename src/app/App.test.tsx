@@ -3,6 +3,6 @@ import { App } from './index';
 
 test('renders correctly', () => {
   render(<App />);
-  const textElement = screen.getByText(/My Portfolioooo/i);
+  const textElement = screen.getByText(/My Portfoliooooooo/i);
   expect(textElement).toBeInTheDocument();
 });
