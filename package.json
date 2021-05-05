@@ -1,7 +1,7 @@
 {
   "homepage": "https://lyubosumaz.github.io/react-portfolio-deploy/",
   "name": "react-portfolio-deploy",
-  "version": "0.6.7",
+  "version": "0.6.10",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
@@ -28,16 +28,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "npm run build && gh-pages -d build",
+    "version:bump": "npm --no-git-tag-version version patch",
     "test": "react-scripts test",
     "test:staged": "CI=true react-scripts test",
     "eject": "react-scripts eject",
-    "version:bump": "--no-git-tag-version version patch",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && git add -A . && test:staged"
+      "pre-commit": "npm run version:bump && npm run format && git add -A . && npm run test:staged"
     }
   },
   "eslintConfig": {
