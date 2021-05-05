@@ -1,7 +1,7 @@
 {
   "homepage": "https://lyubosumaz.github.io/react-portfolio-deploy/",
   "name": "react-portfolio-deploy",
-  "version": "0.6.10",
+  "version": "0.6.12",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run version:bump && npm run format && git add -A . && npm run test:staged"
+      "pre-commit": "npm run version:bump && npm run format && git add . && npm run test:staged"
     }
   },
   "eslintConfig": {
