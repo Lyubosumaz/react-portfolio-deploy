@@ -1,8 +1,8 @@
-import './App.css';
+import "./App.css";
 
-type AppProps = {}
+type AppProps = {};
 
-export const App = ({ }: AppProps) => {
+export const App = ({}: AppProps) => {
   return (
     <div className="App">
       <header className="App-header">
@@ -12,4 +12,4 @@ export const App = ({ }: AppProps) => {
       </header>
     </div>
   );
-}
+};
