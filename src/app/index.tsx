@@ -8,7 +8,7 @@ export const App = ({ }: AppProps) => {
       <header className="App-header">
         <p>My Portfolio</p>
         <p>Have problems with branches</p>
-        <p>Testing the branches</p>
+        <p>Testing the branches with the new migration</p>
       </header>
     </div>
   );
